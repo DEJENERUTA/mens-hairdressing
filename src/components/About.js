@@ -7,44 +7,44 @@ const About = () => (
     <h1>About Us</h1>
     <h2>Learn more about our story and our team.</h2>
     <p>
-      Welcome to Afro Barber, where we celebrate the art of African
-      hairdressing. Our team of highly skilled professionals has extensive
-      experience in the industry.
+      Du vil opleve et rum med højt til loftet, hvor vi skaber det bedste
+      individuelle look til dig. Vi har hos Frisør AFRO BARBER tænkt os, at gøre
+      dig skøn, skarp og smuk, uanset hvem du er.
     </p>
     <p>
-      When you choose Afro Barber, you're choosing excellence in hair cutting,
-      styling, and grooming. Our services include precision haircuts, meticulous
-      beard grooming, and sharp lining techniques.
+      Hos Frisør AFRO BARBER er du sikret, at alle Stylisterne har gennemgået en
+      veloverstået 8 årig erfaring Frisør Vi sikrer dig, at vores erfarne og
+      dygtige Stylister, ikke går på kompromis med kvaliteten.
     </p>
-    <p>
-      Additionally, we offer expert hair and beard coloring services. Stay tuned
-      because we have exciting new services coming soon. Join us at Afro Barber
-      and experience the epitome of African hairdressing.
-    </p>
+    <p> Vi glæder os til at se dig i stolen! 😄</p>
     <div className="team">
       <div className="team-member">
         <img src={AwetHaircut} alt="Awet Haircut" className="team-image" />
         <div className="member-info">
-          <h2>John Doe</h2>
+          <h2>Awet Ab</h2>
           <p>
-            John is an experienced barber with over 10 years in the industry. He
+            Awet is an experienced barber with over 8 years in the industry. He
             specializes in modern styles and classic cuts.
           </p>
-          <Link to={`/booking?hairdresser=John Doe`} className="booking-link">
-            Book with John
+          <Link to={`/booking?hairdresser=Awet Ab`} className="booking-link">
+            Book with Awet
           </Link>
         </div>
       </div>
       <div className="team-member">
         <img src="https://via.placeholder.com/150" alt="Team Member 2" />
         <div className="member-info">
-          <h2>Jane Smith</h2>
+          <h2>Temesgen Brhane </h2>
           <p>
-            Jane is a talented stylist known for her creativity and attention to
-            detail. She loves working with clients to create unique looks.
+            Temesgen is a talented stylist known for his creativity and
+            attention to detail. He loves working with clients to create unique
+            looks.
           </p>
-          <Link to={`/booking?hairdresser=Jane Smith`} className="booking-link">
-            Book with Jane
+          <Link
+            to={`/booking?hairdresser=Temesgen Brhane `}
+            className="booking-link"
+          >
+            Book with Temesgen
           </Link>
         </div>
       </div>

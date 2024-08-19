@@ -10,7 +10,6 @@ const Booking = () => {
     date: "",
     time: "",
     hairdresser: "",
-    email: "",
     phone: "",
   });
 
@@ -27,7 +26,7 @@ const Booking = () => {
     }
   }, [location]);
 
-  const hairdressers = ["John Doe", "Jane Smith", "Bob Johnson"];
+  const hairdressers = ["Awet Ab", "Temesgen Brhane", "Bob Johnson"];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,7 +61,7 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, service, date, time, hairdresser, email, phone } = formData;
+    const { name, service, date, time, hairdresser, phone } = formData;
 
     if (!isWithinOpeningHours(date, time)) {
       toast.error("Selected time is outside of opening hours.");
@@ -142,16 +141,6 @@ const Booking = () => {
               </option>
             ))}
           </select>
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
         </label>
         <label>
           Phone:

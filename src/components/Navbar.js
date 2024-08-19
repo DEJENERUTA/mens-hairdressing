@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AfroLogo from "../images/afro-hair-logo.jpg";
 const Navbar = () => (
   <nav className="navbar">
     <Link to="/">
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <img src={AfroLogo} alt="Afro logo" className="logo-image" />
+      </div>
     </Link>
     <ul>
       <li>

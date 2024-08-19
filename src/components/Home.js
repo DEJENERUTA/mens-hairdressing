@@ -10,6 +10,7 @@ const Home = () => (
     <div className="content">
       <h1>Welcome to Our Hairdressing Shop</h1>
       <p>Your style, our expertise.</p>
+
       <button>
         <Link to="/booking">Book Now</Link>
       </button>
