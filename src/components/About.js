@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AwetHaircut from "../images/Awet-haircut.jpg";
+import Temesgenhaircut from "../images/Temesgen-haircut.jpg";
 
 const About = () => (
   <div className="about-container">
@@ -32,35 +33,34 @@ const About = () => (
         </div>
       </div>
       <div className="team-member">
-        <img src="https://via.placeholder.com/150" alt="Team Member 2" />
+        <img src={Temesgenhaircut} alt="Team Member 2" />
         <div className="member-info">
-          <h2>Temesgen Brhane </h2>
+          <h2>Tomas </h2>
           <p>
-            Temesgen is a talented stylist known for his creativity and
-            attention to detail. He loves working with clients to create unique
-            looks.
+            Tomas is a talented stylist known for his creativity and attention
+            to detail. He loves working with clients to create unique looks.
           </p>
           <Link
             to={`/booking?hairdresser=Temesgen Brhane `}
             className="booking-link"
           >
-            Book with Temesgen
+            Book with Tomas
           </Link>
         </div>
       </div>
       <div className="team-member">
         <img src="https://via.placeholder.com/150" alt="Team Member 3" />
         <div className="member-info">
-          <h2>Mike Johnson</h2>
+          <h2>Abriham</h2>
           <p>
-            Mike has a passion for barbering and is always up-to-date with the
-            latest trends. His skills in fades and shaves are exceptional.
+            Abriham has a passion for barbering and is always up-to-date with
+            the latest trends. His skills in fades and shaves are exceptional.
           </p>
           <Link
             to={`/booking?hairdresser=Mike Johnson`}
             className="booking-link"
           >
-            Book with Mike
+            Book with Abriham
           </Link>
         </div>
       </div>

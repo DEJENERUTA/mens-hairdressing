@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import video from "../images/hairdresser.mp4";
+import video from "../images/afro-barber2.mp4";
 const Home = () => (
   <div className="home-container">
     <video autoPlay loop muted className="background-video">
