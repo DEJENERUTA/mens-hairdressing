@@ -26,7 +26,7 @@ const Booking = () => {
     }
   }, [location]);
 
-  const hairdressers = ["Awet Ab", "Temesgen Brhane", "Bob Johnson"];
+  const hairdressers = ["Awet Ab", "Tomas", "Abriham"];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -101,9 +101,10 @@ const Booking = () => {
             required
           >
             <option value="">Select a service</option>
-            <option value="haircut">Haircut</option>
-            <option value="shave">Shave</option>
-            <option value="beard-trim">Beard Trim</option>
+            <option value="haircut">Klip</option>
+            <option value="shave">Klip og skæge</option>
+            <option value="beard-trim">Line og skæg</option>
+            <option value="beard-trim">Sort farve</option>
           </select>
         </label>
         <label>
