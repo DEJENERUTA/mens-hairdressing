@@ -13,6 +13,8 @@ const Booking = () => {
     phone: "",
   });
 
+  const [useExternalBooking, setUseExternalBooking] = useState(false);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -61,26 +63,20 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, service, date, time, hairdresser, phone } = formData;
 
+    const { date, time } = formData;
     if (!isWithinOpeningHours(date, time)) {
       toast.error("Selected time is outside of opening hours.");
       return;
     }
 
-    toast.success("Booking Confirmed");
-    toast.info(`Notification sent to ${hairdresser}`);
-    toast.info(`Reminder set for ${name} 15 minutes before the appointment`);
-
-    console.log(formData);
-
-    // Here you would send the booking data to a server or a backend service
-    // which would then handle sending the notifications via email/SMS.
+    toast.success("Booking confirmed!"); // Or handle the form submission logic
   };
 
   return (
     <div className="booking-container">
       <h1>Book an Appointment</h1>
+
       <form onSubmit={handleSubmit}>
         <label>
           Name:
@@ -104,7 +100,7 @@ const Booking = () => {
             <option value="haircut">Klip</option>
             <option value="shave">Klip og skæge</option>
             <option value="beard-trim">Line og skæg</option>
-            <option value="beard-trim">Sort farve</option>
+            <option value="coloring">Sort farve</option>
           </select>
         </label>
         <label>
@@ -153,7 +149,18 @@ const Booking = () => {
             required
           />
         </label>
-        <button type="submit">Confirm Booking</button>
+
+        <div className="booking-actions">
+          <button type="submit">Confirm Booking</button>
+          <a
+            href="https://aafrobarber7365.setmore.com/awetabraha"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="external-booking-link"
+          >
+            Book with Setmore App
+          </a>
+        </div>
       </form>
     </div>
   );

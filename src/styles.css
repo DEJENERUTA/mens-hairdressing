@@ -9,7 +9,6 @@ body {
 .logo-image {
   width: 80px;
   height: 80px;
-  background-color: #007bff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -23,7 +22,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
-  margin-right: 30px;
 }
 
 nav ul li {
@@ -51,12 +49,92 @@ nav ul li {
   text-decoration: underline;
 }
 /*responssive*/
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .navbar a {
     display: block;
     margin: 0.5em 0;
   }
 }
+/*booking button style*/
+.booking-container {
+  padding: 50px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.external-booking-link {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.external-booking-link:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .booking-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button,
+  .external-booking-link {
+    width: 100%;
+  }
+}
+/*end of booking button style*/
 
 form {
   display: flex;
@@ -388,12 +466,20 @@ button {
 /* Styles for the footer */
 .footer {
   background-color: #333;
-  text-align: center;
-  padding: 1em;
-
-  bottom: 0;
-  width: 100%;
   color: white;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
 }
 
 .footer a {
@@ -404,4 +490,9 @@ button {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.instagram-icon {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px;
 }
