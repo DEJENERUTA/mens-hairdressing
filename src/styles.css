@@ -52,7 +52,7 @@ nav ul li {
   text-decoration: underline;
 }
 /*responssive*/
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .navbar a {
     display: block;
     margin: 0.5em 0;
