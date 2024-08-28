@@ -7,16 +7,16 @@ const About = () => (
     <h1>About Us</h1>
     <h2>Learn more about our story and our team.</h2>
     <p>
-      Du vil opleve et rum med højt til loftet, hvor vi skaber det bedste
-      individuelle look til dig. Vi har hos Frisør AFRO BARBER tænkt os, at gøre
-      dig skøn, skarp og smuk, uanset hvem du er.
+      You will experience a space with a high ceiling, where we create the best
+      individual look for you. At Frisør AFRO BARBER, we intend to make you
+      beautiful, sharp, and stunning, no matter who you are
     </p>
     <p>
-      Hos Frisør AFRO BARBER er du sikret, at alle Stylisterne har gennemgået en
-      veloverstået 8 årig erfaring Frisør Vi sikrer dig, at vores erfarne og
-      dygtige Stylister, ikke går på kompromis med kvaliteten.
+      At Frisør AFRO BARBER, you are assured that all our stylists have
+      completed a well-rounded 8-year experience in hairdressing. We guarantee
+      that our experienced and skilled stylists do not compromise on quality.
     </p>
-    <p> Vi glæder os til at se dig i stolen! 😄</p>
+    <p> "We look forward to seeing you in the chair! 😄"</p>
     <div className="team">
       <div className="team-member">
         <img src={AwetHaircut} alt="Awet Haircut" className="team-image" />

@@ -16,7 +16,7 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaInstagram />
+        <FaInstagram className="instagram-icon" />
       </a>
     </div>
   </div>
